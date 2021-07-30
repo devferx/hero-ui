@@ -16,13 +16,6 @@
 @font-face {
   font-family: "Roboto Condensed";
   font-style: normal;
-  font-weight: 400;
-  src: local(""),
-    url("./assets/fonts/roboto-condensed-regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Roboto Condensed";
-  font-style: normal;
   font-weight: 700;
   src: local(""),
     url("./assets/fonts/roboto-condensed-bold.ttf") format("truetype");
@@ -34,15 +27,10 @@
   --primary: #1b90fc;
   --grey: #929292;
   --headline1: 700 2.5rem / normal Roboto Condensed;
-  --subtitle1: 700 1.625rem/1.5rem Roboto Condensed;
   --button: 700 0.875rem/1rem Roboto;
   --headline2: 700 1.5rem / normal Roboto Condensed;
   --body1-regular: 400 1rem/1.5rem Roboto;
-  --body1-bold: 700 1rem/1.5rem Roboto;
-  --body2-bold: 700 0.875rem/1.5rem Roboto;
   --body2-regular: 400 0.875rem/1.5rem Roboto;
-  --caption-regular: 400 0.75rem/1.5rem Roboto;
-  --caption-bold: 700 0.75rem/1.5rem Roboto;
 }
 
 * {
@@ -57,6 +45,7 @@ html {
 
 .hero__image-container {
   height: 274px;
+  background-color: green;
 }
 .hero__image-container img {
   width: 100%;
@@ -117,10 +106,11 @@ html {
 @media screen and (min-width: 1024px) {
   .hero {
     display: flex;
-    background: url("./assets/images/hero-loki.png"), green;
+    background: url("https://res.cloudinary.com/dnnoi8xgf/image/upload/v1627619251/hero-ui/hero-loki_effojs.png"),
+      green;
     background-position: top right;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
   }
   .hero__image-container {
